@@ -18,6 +18,9 @@ A = B + C
 => A = B + C
 ```
 
+![Árvore do Item 0](arvore.png)
+
+
 ## Questão 02
 
 ## Questão 03
