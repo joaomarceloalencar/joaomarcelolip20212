@@ -24,3 +24,49 @@ A = B + C
 ## Questão 02
 
 ## Questão 03
+```
+for (int i = 0; i < 10; i++) {
+   printf("%d\n", i);
+   a = b + c;
+}
+<for_stmt> → for <control> { <stmt_list> }
+<control> → (<init>; <expr_bool>; <expr_inc>)
+<init> → <type> <var> = <value>
+<stmt_list> → <stmt>; <stmt> | e
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
