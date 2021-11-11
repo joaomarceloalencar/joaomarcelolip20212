@@ -9,7 +9,7 @@ Fonte: [Instalar o OpenSSH usando as Configurações do Windows](https://docs.mi
 1. Inicie o PowerShell em modo Administrador: clique com o botão direito no menu iniciar e depois selecione _Windows PowerShell (Admin)_. 
 2. Execute o comando:  
 ```
-PS C:\Users\Administrator> Add-WindowsCapability -Online -Name OpenSSH.Client
+PS C:\Users\Administrator> Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 3. Execute apenas o comando ```ssh``` e veja se a saída abaixo aparece:
 ```
