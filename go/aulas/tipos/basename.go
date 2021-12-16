@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"strconv"
 	"bytes"
 )
 
@@ -20,7 +21,7 @@ func basename1(s string) string {
 	// Preserva tudo que estiver antes do último '.''
 	for i := len(s) - 1; i >= 0; i-- {
 		if s[i] == '.' {
-			s = s[:i]
+			s = s[:i] // 0 até i - 1
 			break
 		}
 	}
@@ -63,13 +64,25 @@ func intsToString (values []int) string {
 }
 
 func  main() {
-	diretorio := "/home/jmhal/desenvolvimento/go/basename.go"
+
+    s := "casa"
+	x , err := strconv.Atoi(s)
+	if err != nil {
+		fmt.Println("Erro na conversão!!!")
+	}
+   
+	fmt.Printf("%d\n", x)
+	
+	/*
+	diretorio := "/home/jmhal/desenvolvimento/go/trapezio.go"
 	fmt.Println(basename1(diretorio))
 	fmt.Println(basename2(diretorio))
+    
 
-	numero := "100000"
-	fmt.Println(comma(numero))
+	//numero := "1984100000" // 100,000 1984 -> 1,984
+	//fmt.Println(comma(numero))
 
 	numeros := []int{1, 2, 3}
-	fmt.Println(intsToString(numero))
+	fmt.Println(intsToString(numeros))
+    */
 }
