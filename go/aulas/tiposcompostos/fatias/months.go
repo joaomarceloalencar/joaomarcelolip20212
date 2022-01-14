@@ -37,7 +37,7 @@ func main() {
 	}
 
 	// A linha a seguir causa erro!
-	// fmt.Println(summer[:20])
+	fmt.Println(summer[:7])
 
 	// As linhas seguintes referenciam além do tamanho da fatia, mas não da capacidade.
 	endlessSummer := summer[:5]

@@ -5,11 +5,11 @@ import (
 )
 
 // Um array de 3 inteiros
-var a [3]int
+var a [3]int = [...]int{1, 2, 3}
 
 func main() {
 	// Exibe o primeiro elemento
-	fmt.Println(a[0])
+ 	fmt.Println(a[0])
 
 	// Exibe o último elemento, a[2]
 	fmt.Println(a[len(a) - 1])
@@ -23,4 +23,8 @@ func main() {
 	for _, v := range a {
 		fmt.Printf("%d\n", v)
 	}
+
+    r := [...]int{9:-1}
+	fmt.Println(r)
+
 }

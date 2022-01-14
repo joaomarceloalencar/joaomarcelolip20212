@@ -26,6 +26,8 @@ func main() {
 	ages0 := make(map[string]int)
 	ages0["alice"] = 31
 	ages0["charlie"] = 34
+	ages0["bob"] = 29
+	ages0["alex"] = 18
 
 	// Alocação alternativa, usando um mapa literal
 	ages1 := map[string]int {
@@ -37,7 +39,7 @@ func main() {
 	ages2 := map[string]int {
 		"alice": 31,
 	}
-	ages2["charlie"] = 35
+	ages2["charlie"] = 34
 
 	// Ordenando as chaves
 	var names []string
@@ -51,4 +53,5 @@ func main() {
 
 	fmt.Println(equal(ages0, ages1))
 	fmt.Println(equal(ages0, ages2))
+	fmt.Println(equal(ages1, ages2))
 }
