@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> {{.PageTitle}} </title>
+</head>
+
+<body>
+    <h1>Movies</h1>
+
+    <table border = "1">
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Released
+            </th>
+            <th>
+                Color
+            </th>
+            <th>
+                Actors
+            </th>
+        </tr>
+
+        {{range .Movies}}
+        <tr>
+            <td>
+                {{.Title}} 
+            </td>
+            <td>
+                {{.Year}}
+            </td>
+            <td>
+                {{if .Color}}
+                    No
+                {{else}}
+                    Yes
+                {{end}}
+            </td>
+            <td>
+                {{range .Actors}}
+                   {{.}} 
+                {{end}}
+            </td>
+        </tr>
+        {{end}}
+
+    </table>
+</body>
+
+</html>
