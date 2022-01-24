@@ -57,7 +57,6 @@ func main() {
 	*/
 
 	// Gravar em um arquivo
-
 	err = ioutil.WriteFile("movies.json", data, 0644)
 	if err != nil {
 		log.Fatal("JSON write to file failed: %s", err)

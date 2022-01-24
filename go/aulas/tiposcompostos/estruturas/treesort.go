@@ -50,7 +50,7 @@ func add(t *tree, value int) *tree {
 }
 
 func main() {
-	numbers := []int{19, 84, 22, 01}
+	numbers := []int{19, 84, 22, 01, 20, 14, 100, 2}
 	fmt.Println(numbers)
 	Sort(numbers)
 	fmt.Println(numbers)
